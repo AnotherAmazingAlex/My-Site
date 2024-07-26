@@ -1,0 +1,291 @@
+* {
+	color: #EEEEEE;
+}
+
+.wrapper {
+	/*max-width: 1440px;*/
+	width: 90%;
+	margin: 0 auto;
+}
+
+.center {
+	margin: 0 auto;
+	padding: 0 auto;
+	/*border: 3px solid green;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*width: clamp(100px, 95%, 1440px);*/
+	min-height: 90vh;
+}
+
+.intro-header {
+	-webkit-text-stroke: 0.01em black;
+	font-style: italic;
+	margin: 0 auto;
+	position: relative;
+	right: 1em;
+}
+
+@media all and (orientation:landscape) {
+	.split50 {
+		width: 50%;
+	}
+	
+	.intro-header {
+		font-size: 10vw;
+	}
+}
+
+@media all and (orientation:portrait) {
+	.split50 {
+		display: flex;
+		justify-content: center;
+		height: 45vh;
+	}
+	
+	.intro-header {
+		font-size: 12vw;
+	}
+	
+	.intro-body {
+		flex-direction: column;
+	}
+}
+
+.intro-align {
+	display: inline-block;
+}
+
+@media all and (orientation:landscape) {
+	.intro-align {
+		font-size: 4vw;
+	}
+}
+
+@media all and (orientation:portrait) {
+	.intro-align {
+		margin: 0px 1em;
+		font-size: 6vw;
+		text-align: right;
+		align-items: right;
+	}
+}
+
+.intro .standout-name {
+	display: inline-block;
+	font-weight: bold;
+	color: #76ABAE;
+}
+
+.intro .standout {
+	display: inline-block;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-style: italic;
+	color: #76ABAE;
+	text-align: right;
+}
+
+@media all and (orientation:landscape) {
+	.intro-img {
+		width: 90%;
+		padding-right: 10px;
+	}
+	
+	.intro .standout-name {
+		font-size: 8vw;
+	}
+	
+	.intro .standout {
+		font-size: 5vw;
+	}
+}
+
+@media all and (orientation:portrait) {
+	.intro-img {
+		width: 90%;
+		height: 90%;
+	}
+	
+	.intro .standout-name {
+		font-size: 10vw;
+	}
+	
+	.intro .standout {
+		font-size: 8vw;
+	}
+}
+
+.contents {
+	display: inline-flex;
+	align-items: center; /* Vertical align */
+}
+
+@media all and (orientation:portrait) {
+	.contents {
+		flex-direction: column;
+	}
+}
+
+.section-header {
+	border-bottom: 0.1em solid;
+	border-color: #76abae;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	display: inline-block;
+	padding: 0 auto;
+	margin: 0.4em 0px;
+}
+
+.standout {
+	display: inline;
+	font-weight: bold;
+	color: #76ABAE;
+}
+
+@media all and (orientation:landscape) {
+	.section-header {
+		font-size: 4vw;
+	}
+	
+	.standout {
+		font-size: 2.5vw;
+	}
+	
+	.contents-info {
+		font-size: 1.5vw;
+		line-height: 2.5vw;
+	}
+}
+
+@media all and (orientation:portrait) {
+	.section-header {
+		font-size: 9vw;
+	}
+	
+	.standout {
+		font-size: 7vw;
+	}
+	
+	.contents-info {
+		font-size: 5vw;
+		line-height: 7vw;
+		padding: 1em;
+	}
+	
+	.left {
+		text-align: left;
+	}
+	
+	.right {
+		text-align: right;
+	}
+}
+
+@media all and (orientation:landscape) {
+	.split40 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 55%;
+	}
+
+	.split60 {
+		width: 45%;
+	}
+}
+
+.content-img1 {
+	width: 70%;
+	max-height: 100%;
+}
+
+.content-img2 {
+	width: 95%;
+	max-height: 100%;
+}
+
+@media all and (orientation:landscape) {
+	.contents-left {
+		align-items: left;
+		text-align: left;
+	}
+
+	.contents-right {
+		align-items: right;
+		text-align: right;
+	}
+}
+
+@media all and (orientation:portrait) {
+	.contents-left {
+		align-items: center;
+		text-align: center;
+	}
+
+	.contents-right {
+		align-items: center;
+		text-align: center;
+	}
+	
+	.img-moving {
+		padding: 0.5em;
+	}
+}
+
+.contents-center {
+	align-items: center;
+	text-align: center;
+}
+
+.section-break {
+	padding-bottom: 1vh;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	background: rgb(70,80,96);
+	background: linear-gradient(88deg, rgba(70,80,96,1) 15%, rgba(27,33,41,1) 15%, rgba(43,51,62,1) 30%, rgba(32,36,41,1) 30%, rgba(61,71,85,1) 100%);
+	margin: 0;
+}
+
+.reveal {
+	position: relative;
+	transform: translateY(5em);
+	opacity: 0;
+	transition: all 1s ease;
+}
+
+.reveal.active {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.expand70 {
+	width: 75%;
+}
+
+.language-svg-container {
+	
+}
+
+@media all and (orientation:landscape) {
+	.language-svg {
+		width: 5em;
+	}
+}
+
+@media all and (orientation:portrait) {
+	.language-svg {
+		width: 3em;
+	}
+}
+
+.column {
+	flex-direction: column;
+}
+
+img {
+	object-fit: contain;
+}
